@@ -2,11 +2,6 @@
 assesment
 https://fetch-hiring.s3.amazonaws.com/data-analyst/da_take_home/da_takehome_instructions.html
 
-
-
-
-
-
 Hello,
 
 I hope you’re doing well! I’ve recently completed an in-depth review of our data tables—users, transactions, and products—and wanted to share a quick summary of my findings, an interesting insight, and how we can resolve some questions about the data.
@@ -45,3 +40,29 @@ Thanks so much, and please let me know if you have any questions or comments.
 
 Best regards,
 Steve
+
+Repository Overview
+
+    data_quality_issues.sql / data_quality_issues.md
+        Purpose: Addresses Part 1 of the exercise (data exploration). Contains queries that check for missing values, duplicates, and invalid fields across all three tables.
+        .sql file: SQL statements to diagnose data quality.
+        .md file: Output/results of running those queries.
+
+    Closed-ended_questions.sql / Closed-ended_questions.md
+        Purpose: Addresses Part 2 (closed-ended questions). Includes single-query solutions for:
+            Top 5 brands by receipts scanned (users ≥ 21)
+            Top 5 brands by sales (accounts ≥ 6 months)
+            Percentage of sales in Health & Wellness by generation
+        .sql file: The queries themselves.
+        .md file: Captured results of those queries.
+
+    Open-ended_questions.sql / open_ended_results.md
+        Purpose: Addresses Part 2 (open-ended questions). Demonstrates assumptions and single-query approaches for:
+            Power users (top 5% by receipts)
+            Leading brand in “Dips & Salsa” (or alternate category)
+            Year-over-year growth calculation
+        .sql file: The open-ended queries.
+        .md file: The query outputs in Markdown format.
+
+    createMDs.py
+        Purpose: A Python script that executes the above .sql files, captures the results, and writes them into .md files. Useful for automating the run-and-export process.
